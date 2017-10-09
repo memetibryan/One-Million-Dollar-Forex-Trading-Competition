@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
 	def create
 		@blog = Blog.new(blog_params)
 		if @blog.save
-			render :index
+			redirect_to "/pdf"
 		else
 			redirect_to "/"
 		end
