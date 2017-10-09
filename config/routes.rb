@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :conference
   resources :dollar_competition
   resources :trading_platform
+  resources :east_africa_awards
+  resources :south_africa_awards
 end

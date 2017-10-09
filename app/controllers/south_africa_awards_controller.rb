@@ -1,0 +1,2 @@
+class SouthAfricaAwardsController < ApplicationController
+end
