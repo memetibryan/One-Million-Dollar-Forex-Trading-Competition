@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :learn
   resources :conference
   resources :dollar_competition
+  resources :trading_platform
 end
