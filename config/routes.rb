@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :expo
   resources :learn
   resources :conference
+  resources :dollar_competition
 end

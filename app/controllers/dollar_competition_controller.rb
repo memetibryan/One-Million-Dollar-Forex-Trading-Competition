@@ -1,0 +1,2 @@
+class DollarCompetitionController < ApplicationController
+end
