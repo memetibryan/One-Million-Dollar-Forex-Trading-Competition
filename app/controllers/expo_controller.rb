@@ -1,0 +1,2 @@
+class ExpoController < ApplicationController
+end
