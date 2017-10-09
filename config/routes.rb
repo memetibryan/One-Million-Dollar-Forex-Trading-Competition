@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
   root :to => 'index#index'
+
+  resources :awards
+  resources :blogs
+  resources :competition
+  resources :expo
+  resources :learn
+  resources :conference
 end
