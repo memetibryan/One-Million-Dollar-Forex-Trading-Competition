@@ -1,0 +1,17 @@
+<div class="container-fluid">
+
+<%= form_for [@blog] do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %><br>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %><br>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+    <%= f.select :country, ['Kenya','Uganda','Tanzania','South Africa','Egypt','England','Hawaii','Senegal','Somalia','Congo','Rwanda']%><br>
+
+    <p><%= f.submit %></p>
+  <% end %>
+
+</div>
