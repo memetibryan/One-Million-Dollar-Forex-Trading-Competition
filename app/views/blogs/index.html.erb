@@ -7,27 +7,4 @@
     <img class="w3-image" src="./assets/free-forex-book.jpg" alt="free books" width="1600" height="1060">
 </div><hr>
 
-<form>
-<ul class="form-style-1">
-    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
-    <li>
-        <label>Email <span class="required">*</span></label>
-        <input type="email" name="field3" class="field-long" />
-    </li>
-    <li>
-        <label>Subject</label>
-        <select name="field4" class="field-select">
-        <option value="Forex in Kenya">Advertise</option>
-        <option value="Partnership">Partnership</option>
-        <option value="Forex Trade">General</option>
-        </select>
-    </li>
-    <li>
-        <label>Why did you pick that topic?? <span class="required">*</span></label>
-        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
-    </li>
-    <li>
-        <input type="submit" value="Submit" />
-    </li>
-</ul>
-</form>
+<%= render "form" %>

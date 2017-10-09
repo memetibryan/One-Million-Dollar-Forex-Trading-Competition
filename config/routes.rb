@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   resources :trading_platform
   resources :east_africa_awards
   resources :south_africa_awards
+  resources :pdf
 end
