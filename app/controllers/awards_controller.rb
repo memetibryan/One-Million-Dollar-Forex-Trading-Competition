@@ -6,9 +6,9 @@ class AwardsController < ApplicationController
 	def create
 		@award = Award.new(award_params)
 		if @award.save
-			"Success"
-		else
 			render :index
+		else
+			redirect_to "/"
 		end
 	end
 
