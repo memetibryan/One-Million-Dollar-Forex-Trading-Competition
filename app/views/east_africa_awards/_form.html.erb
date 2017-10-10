@@ -1,28 +1,50 @@
-<div class="container-fluid">
-    <%= form_for [@east_africa_award] do |f| %>
-        <%= f.label :Company_name %>
-            <%= f.text_field :company_name %>
-                <br>
-                <%= f.label :Comany_website %>
-                    <%= f.text_field :company_website %>
-                        <br>
-                        <%= f.label :name %>
-                            <%= f.text_field :name%>
-                                <br>
-                                <%= f.label :address %>
-                                    <%= f.text_field :address %>
-                                        <%= f.label :phone_number %>
-                                            <%= f.text_field :phone_number %>
-                                                <%= f.label :email %>
-                                                    <%= f.text_field :email %>
-                                                        <%= f.label :ticket_quantity %>
-                                                            <%= f.text_field :ticket_quantity %>
-                                                                <%= f.label :security_code %>
-                                                                    <%= f.text_field :security_code %>
-                                                                        <%= f.label :message %>
-                                                                            <%= f.text_field :message %>
-                                                                                <p>
-                                                                                    <%= f.submit %>
-                                                                                </p>
-                                                                                <% end %>
-</div>
+    <div class="form">
+        <%= form_for [@east_africa_award] do |f| %>
+            <div class="row">
+                <div class="col-md-6">
+                    <%= f.label :Company_name %>
+                        <%= f.text_field :company_name, :class => "input" %>
+                            <br>
+                            <%= f.label :Comany_website %>
+                                <%= f.text_field :company_website, :class => "input" %>
+                                    <br>
+                                    <%= f.label :name %>
+                                        <%= f.text_field :name, :class => "input" %>
+                                            <br>
+                                            <%= f.label :address %>
+                                                <%= f.text_field :address, :class => "input" %>
+                                                    <br>
+                                                    <%= f.label :phone_number %>
+                                                        <%= f.text_field :phone_number, :class => "input" %>
+                                                            <br>
+                </div>
+                <div class="col-md-6">
+                    <%= f.label :email %>
+                        <%= f.text_field :email, :class => "input" %>
+                            <br>
+                            <%= f.label :ticket_quantity %>
+                                <%= f.text_field :ticket_quantity, :class => "input" %>
+                                    <br>
+                                    <%= f.label :security_code %>
+                                        <%= f.text_field :security_code, :class => "input" %>
+                                            <br>
+                                            <%= f.label :message %>
+                                                <%= f.text_field :message, :class => "input" %>
+                                                    <br>
+                </div>
+            </div>
+            <%= f.submit "Apply"%>
+                <hr>
+                <% end %>
+    </div>
+<style>
+    .input {
+    width: 60%;
+    padding: 6px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form {
+    text-align: center;
+</style>
