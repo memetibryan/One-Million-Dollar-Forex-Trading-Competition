@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :competition
   resources :expo
   resources :learn
-  resources :conference
+  resources :conferences
   resources :seminars
   resources :dollar_competition
   resources :trading_platform

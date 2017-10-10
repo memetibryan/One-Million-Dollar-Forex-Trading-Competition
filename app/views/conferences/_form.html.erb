@@ -1,0 +1,26 @@
+<div class="form">
+    <%= form_for [@conference] do |f| %>
+        <%= f.label :name %>
+            <%= f.text_field :name, :class => "input" %>
+                <br>
+                <%= f.label :telephone %>
+                    <%= f.text_field :telephone, :class => "input" %>
+                        <br>
+                        <%= f.label :email %>
+                            <%= f.text_field :email, :class => "input" %>
+                                <br>
+                                <%= f.submit "Apply"%>
+                                    <hr>
+                                    <% end %>
+</div>
+<style>
+    .input {
+    width: 60%;
+    padding: 6px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form {
+    text-align: center;
+</style>
