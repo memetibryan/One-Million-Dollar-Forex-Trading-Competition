@@ -111,11 +111,15 @@ select {
 }
 
 
+
+
 /*awards*/
 
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+
+
 
 
 /*
@@ -262,6 +266,8 @@ body {
 }
 
 
+
+
 /* Box Model */
 
 *,
@@ -271,6 +277,8 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
 
 
 
@@ -1677,6 +1685,8 @@ body {
 }
 
 
+
+
 /* Basic */
 
 @-ms-viewport {
@@ -1711,6 +1721,8 @@ body.is-loading *:after {
     -ms-transition: none !important;
     transition: none !important;
 }
+
+
 
 
 /* Type */
@@ -1862,6 +1874,8 @@ hr.major {
 }
 
 
+
+
 /* Section/Article */
 
 @media screen and (max-width: 736px) {
@@ -1894,6 +1908,8 @@ hr.major {
         text-align: center;
     }
 }
+
+
 
 
 
@@ -1949,24 +1965,9 @@ hr.major {
 }
 
 
+
+
 /* Form */
-
-form {
-    margin: 0 0 2em 0;
-}
-
-form .field {
-    margin-bottom: 1.5em;
-}
-
-form .field.half {
-    display: inline-block;
-    width: 48%;
-}
-
-form .field.half.first {
-    margin-right: 3%;
-}
 
 @media screen and (max-width: 980px) {
 
@@ -1981,11 +1982,7 @@ form .field.half.first {
 }
 
 label {
-
     display: block;
-    font-size: 0.9em;
-    font-weight: 600;
-    margin: 0 0 1em 0;
 }
 
 input[type="text"],
@@ -2067,10 +2064,6 @@ input[type="password"],
 input[type="email"],
 select {
     height: 2.75em;
-}
-
-textarea {
-    padding: 0.75em 1em;
 }
 
 input[type="checkbox"],
@@ -2174,43 +2167,6 @@ input[type="radio"]+label:before {
 }
 
 
-/* Box */
-
-.box {
-    border: solid 1px #dbdbdb;
-    margin-bottom: 2em;
-    padding: 1.5em;
-}
-
-.box> :last-child,
-.box> :last-child> :last-child,
-.box> :last-child> :last-child> :last-child {
-    margin-bottom: 0;
-}
-
-.box.alt {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-}
-
-.box.person {
-    border: solid 1px #8dcca9;
-    padding: 3em 1.5em;
-}
-
-.box.person h3 {
-    margin: 0;
-}
-
-.box.person .image {
-    margin-bottom: 1em;
-}
-
-.box.person .image img {
-    max-width: 100%;
-}
-
 
 /* Icon */
 
@@ -2232,6 +2188,8 @@ input[type="radio"]+label:before {
 .icon>.label {
     display: none;
 }
+
+
 
 
 /* Image */
@@ -2293,6 +2251,8 @@ input[type="radio"]+label:before {
 .image.main img {
     width: 100%;
 }
+
+
 
 
 /* List */
@@ -2470,6 +2430,8 @@ dl dt {
 dl dd {
     margin-left: 2em;
 }
+
+
 
 
 /* Table */
@@ -2724,11 +2686,12 @@ button:disabled,
 }
 
 
+
+
 /* Banner */
 
 #banner {
     padding: 8em 0 9em 0;
-    background-image: url(../../images/banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -2911,6 +2874,8 @@ button:disabled,
         font-size: 1.5em;
     }
 }
+
+
 
 
 /* Footer */
