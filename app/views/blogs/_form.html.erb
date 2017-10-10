@@ -1,28 +1,33 @@
-<div class="jumbotron">
-    <div class="form">
-        <%= form_for [@blog] do |f| %>
-            <%= f.label :first_name %>
-                <%= f.text_field :first_name, :class => "input" %>
-                    <br>
-                    <%= f.label :last_name %>
-                        <%= f.text_field :last_name, :class => "input" %>
-                            <br>
-                            <%= f.label :email %>
-                                <%= f.text_field :email, :class => "input" %>
-                                    <br>
-                                    <%= f.label :phone %>
-                                        <%= f.text_field :phone, :class => "input" %>
-                                            <br>
-                                            <%= f.label :country %>
-                                                <%= f.select :country, ['Kenya','Uganda','Tanzania','South Africa','Egypt','England','Hawaii','Senegal','Somalia','Congo','Rwanda']%>
-                                                    <hr>
-                                                    <%= f.submit %>
-                                                        <% end %>
-    </div>
+<div class="form">
+    <%= form_for [@blog] do |f| %>
+        <div class="row">
+            <div class="col-md-6">
+                <%= f.label :first_name %>
+                    <%= f.text_field :first_name, :class => "input" %>
+                        <br>
+                        <%= f.label :last_name %>
+                            <%= f.text_field :last_name, :class => "input" %>
+                                <br>
+                                <%= f.label :email %>
+                                    <%= f.text_field :email, :class => "input" %>
+                                        <br>
+            </div>
+            <div class="col-md-6">
+                <%= f.label :phone %>
+                    <%= f.text_field :phone, :class => "input" %>
+                        <br>
+                        <%= f.label :country %>
+                            <%= f.select :country, ['Kenya','Uganda','Tanzania','South Africa','Egypt','England','Hawaii','Senegal','Somalia','Congo','Rwanda']%>
+                                <hr>
+            </div>
+        </div>
+        <%= f.submit %>
+            <hr>
+            <% end %>
 </div>
 <style>
-.input {
-    width: 30%;
+    .input {
+    width: 60%;
     padding: 6px 8px;
     margin: 8px 0;
     box-sizing: border-box;
