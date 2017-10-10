@@ -4,8 +4,8 @@
 <body class="w3-content w3-black" style="max-width:1500px;">
     <!-- Header with Slideshow -->
     <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>FOREX TRADING MOGUL COMPETITION </b></h1>
-  </header>
+        <h1 class="w3-xxxlarge"><b>FOREX TRADING MOGUL COMPETITION </b></h1>
+    </header>
     <header class="w3-display-container">
         <div class="mySlides w3-animate-opacity">
             <img class="w3-image" src="./assets/competition.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
@@ -66,25 +66,42 @@
         <img src="./assets/partners.jpg" style="width:100%">
     </div>
     <!-- Modal -->
-    <div class="w3-padding-32">
-        <button class="w3-btn w3-xlarge w3-red w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Terms & Conditions</button>
-    </div>
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-card-5 w3-animate-top">
-            <header class="w3-container w3-theme-l1">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">×</span>
-                <div class="w3-padding">
-                    <p>1. Forex Trade Mogul Competition will commence on 1 November 2017 and end on 22 November 2017. Registration to participate in the competition is open now and will stay open until the end of the competition on the 22nd November at 23:59 GMT. This is the opportunity to win, with no risk and no entry fee, 24/7 you can trade anywhere and anytime using your Laptop/ Tablet/ iPad / Mobile Phone or trade on any web browser.</p>
-                    <p>2. On your Forex Trade Mogul Competition Account you will be allocated $ 50,000 which is equivalent to Ksh 5,000,000 and Contest Accounts will be set only in USD currency. You are required to trade the money on all Forex Currency and generate as much profit as you can and minimize your loss as you can. The ranking of the competition will be based only on profit and loss (PnL) on your account and it will be posted daily on the ranking section.</p>
-                    <p>3. Registration is open and you can start practicing now up-to 31st October 2017 on your Forex Trade Mogul Competition Account. All the Forex Trade Mogul Competition Account account will be reset back to $ 50,000 before the competition starts on 1st November 2017.</p>
-                    <p>4. All positions that are open at end of Forex Trade Mogul Competition on 22 November 2017 at 11:59 PM Kenyan Time will be automatically closed at prevailing market prices.</p>
-                    <p>5. Cash prizes awaiting the winners are real money! *All prizes are credited in a Live Account. The top 3 performers will be awarded the following: Grand Winner USD 2,000 ( equivalent to Ksh 200,000) First Runners Up USD 1,000 (equivalent to Ksh 100,000) Second Runners Up USD 750 (equivalent to Ksh 75,000) Terms & Conditions apply (Accept To Register) – Our Database: Name, Email, Mobile No:</p>
-                    <input type="checkbox" name="agree" id="agree" value="agree" />
-                    <label for='agree'>Do you agree to Terms & Conditions?</label>
-                </div>
-            </header>
+    <div id="suggestions">
+        <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+            <h1>Interested?</h1>
+            <p class="w3-large">Do you want to be a participant?</p><hr>
+            <p class="w3-xlarge">
+                <button onclick="document.getElementById( 'id01').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Terms & Conditions</button>
+            </p>
         </div>
-    </div><hr>
+    </div>
+    <!-- suggestion modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+            <div class="w3-container w3-white w3-center">
+                <p>1. Forex Trade Mogul Competition will commence on 1 November 2017 and end on 22 November 2017. Registration to participate in the competition is open now and will stay open until the end of the competition on the 22nd November at 23:59 GMT. This is the opportunity to win, with no risk and no entry fee, 24/7 you can trade anywhere and anytime using your Laptop/ Tablet/ iPad / Mobile Phone or trade on any web browser.</p><hr>
+                <p>2. On your Forex Trade Mogul Competition Account you will be allocated $ 50,000 which is equivalent to Ksh 5,000,000 and Contest Accounts will be set only in USD currency. You are required to trade the money on all Forex Currency and generate as much profit as you can and minimize your loss as you can. The ranking of the competition will be based only on profit and loss (PnL) on your account and it will be posted daily on the ranking section.</p><hr>
+                <p>3. Registration is open and you can start practicing now up-to 31st October 2017 on your Forex Trade Mogul Competition Account. All the Forex Trade Mogul Competition Account account will be reset back to $ 50,000 before the competition starts on 1st November 2017.</p><hr>
+                <p>4. All positions that are open at end of Forex Trade Mogul Competition on 22 November 2017 at 11:59 PM Kenyan Time will be automatically closed at prevailing market prices.</p><hr>
+                <p>5. Cash prizes awaiting the winners are real money! *All prizes are credited in a Live Account. The top 3 performers will be awarded the following: Grand Winner USD 2,000 ( equivalent to Ksh 200,000) First Runners Up USD 1,000 (equivalent to Ksh 100,000) Second Runners Up USD 750 (equivalent to Ksh 75,000) Terms & Conditions apply (Accept To Register) – Our Database: Name, Email, Mobile No:</p>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="agree" id="agree" value="agree" />
+                        <label for='agree'>Do you agree to Terms & Conditions?</label>
+                    </div>
+                    <div class="col">
+                        <div class="w3-half">
+                            <button onclick="document.getElementById( 'id01').style.display='none' " type="button" class="w3-button w3-block w3-blue">x</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <hr>
     <div class="container-fluid">
         <div class="mySlides w3-display-container w3-center">
             <img src="./assets/share.jpg" style="width:100%">
