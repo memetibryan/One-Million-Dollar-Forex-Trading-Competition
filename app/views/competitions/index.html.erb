@@ -96,11 +96,7 @@
                 <script>
                 function myFunction() {
                     var x = document.getElementById('myDIV');
-                    if (x.style.visibility === 'visible') {
-                        x.style.visibility = 'hidden';
-                    } else {
-                        x.style.visibility = 'visible';
-                    }
+                    x.onclick('myDIV').show()
                 }
                 </script>
                 <div class="row">
@@ -109,7 +105,7 @@
                         <label for='agree'>Do you agree to Terms & Conditions?</label>
                     </div>
                     <div class="col">
-                        <button id="myDIV" onclick="document.getElementById( 'id02').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Fill the form</button><br>
+                        <button id="myDIV" onclick="document.getElementById( 'id02').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px; display: none">Fill the form</button><br>
                     </div>
                     <div class="col">
                         <div class="w3-half">
