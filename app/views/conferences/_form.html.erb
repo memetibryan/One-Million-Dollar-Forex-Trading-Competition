@@ -1,17 +1,23 @@
 <div class="form">
     <%= form_for [@conference] do |f| %>
-        <%= f.label :name %>
-            <%= f.text_field :name, :class => "input" %>
-                <br>
-                <%= f.label :telephone %>
-                    <%= f.text_field :telephone, :class => "input" %>
+        <div class="row" style="padding-left: 200px">
+            <div class="col">
+                <%= f.label :name %>
+                    <%= f.text_field :name, :class => "input" %>
                         <br>
-                        <%= f.label :email %>
-                            <%= f.text_field :email, :class => "input" %>
+                        <%= f.label :telephone %>
+                            <%= f.text_field :telephone, :class => "input" %>
                                 <br>
-                                <%= f.submit "Apply"%>
-                                    <hr>
-                                    <% end %>
+            </div>
+            <div class="col">
+                <%= f.label :email %>
+                    <%= f.text_field :email, :class => "input" %>
+                        <br>
+                        
+            </div>
+        </div>
+        <%= f.submit "Send"%>
+        <% end %>
 </div>
 <style>
     .input {
