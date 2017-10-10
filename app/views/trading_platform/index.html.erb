@@ -2,38 +2,43 @@
     <h1 class="w3-xxxlarge"><b>MT4 Trading Platform</b></h1>
     <p>We do offer the award-winning MetaTrader 4 platform for trading Forex, Indices and Commodities. We also offer MT4 WebTrader for internet browsers and mobile trading platforms for Android, iPhone and iPad. These platforms are all free of charge.</p>
 </header>
-
 <style>
-.mySlides {display:none;}
-</style>
-<body>
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="./assets/trade-platform.png" style="width:100%">
-  <img class="mySlides" src="./assets/world-best-platform.jpg" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+.mySlides {
+    display: none;
 }
-</script>
+</style>
 
-<hr>
-<div class="container-fluid">
-    <a href="/">Open an Account!</a>
-</div>
-<div class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="./assets/founded-by-traders.jpg" alt="founders" width="1600" height="1060">
-</div>
+<body>
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="./assets/trade-platform.png" style="width:100%">
+        <img class="mySlides" src="./assets/forex-trade-training.jpg" style="width:100%">
+    </div>
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <hr>
+    <div id="suggestions">
+        <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+            <h1>Interested?</h1>
+            <hr>
+            <p class="w3-xlarge">
+                <a href="/" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Open an Account</a>
+            </p>
+        </div>
+    </div>
+    <div class="w3-display-container w3-wide" id="home">
+        <img class="w3-image" src="./assets/founded-by-traders.jpg" alt="founders" width="1600" height="1060">
+    </div>
