@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :awards
   resources :blogs
-  resources :competition
+  resources :competitions
   resources :expo
   resources :learn
   resources :conferences

@@ -1,0 +1,22 @@
+<div class="form">
+    <%= form_for [@competition] do |f| %>
+        <div class="row">
+            <div class="col-md-6">
+                <%= f.label :name %>
+                    <%= f.text_field :name, :class => "input" %>
+                        <%= f.label :email %>
+                            <%= f.text_field :email, :class => "input" %>
+                                <br>
+            </div>
+            <div class="col-md-6">
+                <%= f.label :phone %>
+                    <%= f.text_field :phone, :class => "input" %>
+            </div>
+        </div>
+        <%= f.submit "Apply"%>
+            <% end %>
+                <hr>
+                <div class="w3-half">
+                    <button onclick="document.getElementById( 'id01').style.display='none' " type="button" class="w3-button w3-block w3-blue">Cancel</button>
+                </div>
+</div>
