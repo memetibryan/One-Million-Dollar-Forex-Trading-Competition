@@ -1,110 +1,66 @@
 <!DOCTYPE html>
 <html>
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
 
-<body class="w3-light-grey">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Expo</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#menu" class="w3-bar-item w3-button">Kenya Expo</a>
+      <a href="#contact" class="w3-bar-item w3-button">University Expo</a>
+      <a href="#about" class="w3-bar-item w3-button">Floor plan</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./assets/forex-kenya.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Expo</h1><br>
+      <h5 class="w3-center">The Kenya Forex Trade Expo</h5>
+    </div>
+  </div>
   
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1600px">
-  <br><br>
+  <hr>
 
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>2017 KENYA FOREX TRADING EXPO </b></h1>
-  </header>
-
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="./assets/forex-kenya.jpg" alt="Fashion Blog" width="1600" height="1060">
-  </header>
-
-  <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
-
-    <!-- Blog entries -->
-    <div class="w3-row">
-    
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Kenya Forex Trading Expo</h3>
-          <h5>Soon <span class="w3-opacity">2017</span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="./assets/forex-uni.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
-          <p>An Expo like no other where we bring the best top –tier international forex brokers to the Expo in Kenya and East Africa at large; To apply as an exhibitor, please complete the below information and ensure that your information is captured correctly for ease of communication moving forward. <a href="#">CLICK HERE TO REGISTER NOW</a></p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Likes  </b> <span class="w3-tag w3-white">100+</span></button></p>
-          <p class="w3-clear"></p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>PROPOSED FLOOR PLAN</h3>
-        </div>
-
-        <div class="w3-justify">
-          <img src="./assets/floor-plan.png" alt="Floor plan" style="width:100%" class="w3-padding-16">
-          <p><strong>Main exhibitor applications will be considered on a first come first served basis and exhibitors notified accordingly.</strong></p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p><br><hr>
-      
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">Main exhibitor applications will be considered on a first come first served basis and exhibitors notified accordingly. 
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
-        </div>
-      </div>
-
-    <!-- END About/Intro Menu -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Expo</h1><br>
+      <h5 class="w3-center">The University Forex Expo</h5>
     </div>
-
-  <!-- END GRID -->
-  </div>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./assets/forex-uni.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
     </div>
   </div>
-</div>
+  
+  <hr>
 
-<!-- Footer -->
-<footer class="w3-container" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-</footer>
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./assets/floor-plan.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
 
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-function likeFunction(x) {
-    x.style.fontWeight = "bold";
-    x.innerHTML = "✓ Liked";
-}
-</script>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Floor Plan</h1><br>
+      <h5 class="w3-center">The proposed layout plan</h5>
+    </div>
+  </div>
 
 </body>
 </html>
