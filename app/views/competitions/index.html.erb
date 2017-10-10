@@ -105,7 +105,8 @@
                         <label for='agree'>Do you agree to Terms & Conditions?</label>
                     </div>
                     <div class="col">
-                        <button id="myDIV" onclick="document.getElementById( 'id02').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px; display: none">Fill the form</button><br>
+                        <button id="myDIV" onclick="document.getElementById( 'id02').style.display='block' " class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px; display: none">Fill the form</button>
+                        <br>
                     </div>
                     <div class="col">
                         <div class="w3-half">
@@ -116,12 +117,20 @@
             </div>
         </div>
         <div id="id02" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-            <div class="w3-container w3-white w3-center">
-                <%= render "form" %>
+            <div class="w3-modal-content" style="padding:32px;max-width:600px">
+                <div class="w3-container w3-white w3-center">
+                    <footer id="footer">
+                        <div class="inner">
+                            <h3>Fill the form</h3>
+                            <%= render "form" %>
+                                <div class="copyright">
+                                    &copy; GamerzArena</a>
+                                </div>
+                        </div>
+                    </footer>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
     <hr>
