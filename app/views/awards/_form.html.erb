@@ -1,39 +1,39 @@
-    <div class="form">
-        <%= form_for [@award] do |f| %>
-            <div class="row">
-                <div class="col-md-6">
-                    <%= f.label :Company_name %>
-                        <%= f.text_field :company_name, :class => "input" %>
-                            <br>
-                            <%= f.label :Comany_website %>
-                                <%= f.text_field :company_website, :class => "input" %>
-                                    <br>
-                                    <%= f.label :name %>
-                                        <%= f.text_field :name, :class => "input" %>
-                                            <br>
-                                            <%= f.label :address %>
-                                                <%= f.text_field :address, :class => "input" %>
-                                                    <br>
-                                                    <%= f.label :phone_number %>
-                                                        <%= f.text_field :phone_number, :class => "input" %>
-                                                            <br>
-                </div>
-                <div class="col-md-6">
-                    <%= f.label :email %>
-                        <%= f.text_field :email, :class => "input" %>
-                            <br>
-                            <%= f.label :ticket_quantity %>
-                                <%= f.text_field :ticket_quantity, :class => "input" %>
-                                    <br>
-                                    <%= f.label :security_code %>
-                                        <%= f.text_field :security_code, :class => "input" %>
-                                            <br>
-                                            <%= f.label :message %>
-                                                <%= f.text_field :message, :class => "input" %>
-                                                    <br>
-                </div>
+<div class="form">
+    <%= form_for [@award] do |f| %>
+        <div class="row">
+            <div class="col-md-6">
+                <%= f.label :Company_name %>
+                    <%= f.text_field :company_name, :class => "input" %>
+                        <br>
+                        <%= f.label :Comany_website %>
+                            <%= f.text_field :company_website, :class => "input" %>
+                                <br>
+                                <%= f.label :name %>
+                                    <%= f.text_field :name, :class => "input" %>
+                                        <br>
+                                        <%= f.label :address %>
+                                            <%= f.text_field :address, :class => "input" %>
+                                                <br>
+                                                <%= f.label :phone_number %>
+                                                    <%= f.text_field :phone_number, :class => "input" %>
+                                                        <br>
             </div>
-            <%= f.submit "Apply"%>
-                <hr>
-                <% end %>
-    </div>
+            <div class="col-md-6">
+                <%= f.label :email %>
+                    <%= f.text_field :email, :class => "input" %>
+                        <br>
+                        <%= f.label :ticket_quantity %>
+                            <%= f.text_field :ticket_quantity, :class => "input" %>
+                                <br>
+                                <%= f.label :security_code %>
+                                    <%= f.text_field :security_code, :class => "input" %>
+                                        <br>
+                                        <%= f.label :message %>
+                                            <%= f.text_field :message, :class => "input" %>
+                                                <br>
+            </div>
+        </div>
+        <%= f.submit "Apply"%>
+            <hr>
+            <% end %>
+</div>
