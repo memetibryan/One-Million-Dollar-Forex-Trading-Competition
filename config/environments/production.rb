@@ -1,3 +1,89 @@
+# Using URI and Net:HTTP which are already included with Rails
+
+uri = URI('https://urlxray.expeditedaddons.com')
+
+# Change the input parameters here
+uri.query = URI.encode_www_form({
+  api_key: 'DG3R6H4UL3E9JSY72XP0KC891ZWB16057T84NIOVFAMQ25',
+  url: 'http://www.forexarena.com',
+  fetch_content: false
+})
+
+# Results are returned as a JSON object
+result = JSON.parse(Net::HTTP.get_response(uri).body)
+
+# For reference, here are all the outputs
+
+# Is this a valid well-formed URL
+result['valid']
+
+# Is this URL actually serving real content
+result['real']
+
+# True if this URL responded with an HTTP OK (200) status
+result['http_ok']
+
+# The HTTP status code this URL responded with
+result['http_status']
+
+# The HTTP status message assoicated with the status code
+result['http_status_message']
+
+# True if this URL responded with a HTTP redirect
+result['http_redirect']
+
+# The fully qualified URL. This may be different to the URL requested if http-redirect is True
+result['url']
+
+# The URL protocol (usually http or https)
+result['url_protocol']
+
+# The URL port
+result['url_port']
+
+# The URL path
+result['url_path']
+
+# A key:value map of the URL query paramaters
+result['query']
+
+# The actual content this URL responded with. This is only set if the 'fetch-content' parameter was set
+result['content']
+
+# The size of the URL content in bytes
+result['content_size']
+
+# The content-type the URL points to
+result['content_type']
+
+# The encoding type the URL uses
+result['content_encoding']
+
+# The time taken to load the URL content (in seconds)
+result['load_time']
+
+# The IP address of the server hosting this URL
+result['server_ip']
+
+# The name of the server software hosting this URL
+result['server_name']
+
+# Server IP geo-location: full country name
+result['server_country']
+
+# Server IP geo-location: ISO 2-letter country code
+result['server_country_code']
+
+# Server IP geo-location: full city name (if detectable)
+result['server_city']
+
+# Server IP geo-location: full region name (if detectable)
+result['server_region']
+
+# The server hostname (PTR)
+result['server_hostname']
+
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
