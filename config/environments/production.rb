@@ -1,3 +1,6 @@
+require 'net/http'
+require 'json'
+
 # Using URI and Net:HTTP which are already included with Rails
 
 uri = URI('https://urlxray.expeditedaddons.com')
