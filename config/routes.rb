@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :expo
   resources :learn
   resources :conference
+  resources :seminars
   resources :dollar_competition
   resources :trading_platform
   resources :east_africa_awards
